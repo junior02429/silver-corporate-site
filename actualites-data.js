@@ -1,22 +1,4 @@
-/* ==========================================================
-   ACTUALITÉS : vos articles
 
-   COMMENT AJOUTER UNE ACTUALITÉ
-   1. Lisez l'article original.
-   2. Écrivez VOUS-MÊME un résumé avec vos propres mots (2 à 3 phrases).
-      Ne copiez ni phrases, ni citations, ni chiffres que vous n'avez pas vérifiés.
-   3. Copiez le bloc modèle, collez-le entre les crochets, remplissez-le.
-
-   RÈGLES
-   - titre, resume, source, lien (https://...) et datePublication sont OBLIGATOIRES,
-     sinon l'article est ignoré.
-   - statut "verifie" : seulement avec dateVerification remplie, sinon « À vérifier ».
-   - Dates au format AAAA-MM-JJ.
-
-   rubrique : education, jeunesse, numerique, ia, entrepreneuriat, economie, silver
-   zone     : congo, afrique, monde
-   statut   : verifie, a-verifier
-   ========================================================== */
 
 /* ----- MODÈLE À COPIER -----
   {
