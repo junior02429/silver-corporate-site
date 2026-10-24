@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ressources | Silver Corporate</title>
+  <meta name="description" content="Guides pratiques et ressources éducatives : études, bourses, candidatures, compétences numériques, programmation, intelligence artificielle et entrepreneuriat.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== EN-TÊTE ET MENU ========== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+
+      <a href="index.html" class="brand" aria-label="Silver Corporate - Accueil">
+        <span class="brand-mark" aria-hidden="true">SC</span>
+        <span class="brand-name">Silver Corporate</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packs-offres.html">Packs &amp; Offres</a></li>
+          <li><a href="jeunes-inspires.html">Jeunes Inspirés</a></li>
+          <li><a href="opportunites.html">Opportunités</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="ressources.html" aria-current="page">Ressources</a></li>
+          <li class="nav-more">
+            <details>
+              <summary>Plus</summary>
+              <ul class="nav-submenu">
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="informations.html">Informations</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== TITRE DE LA PAGE ========== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Apprendre · Se préparer · Entreprendre</p>
+        <h1>Ressources</h1>
+        <p class="page-lead">
+          Des guides pratiques et des ressources éducatives sur les études, les bourses, les candidatures,
+          les compétences numériques, la programmation, l'intelligence artificielle et l'entrepreneuriat.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== AVERTISSEMENT ========== -->
+    <section class="section section-tight">
+      <div class="container">
+
+        <div class="notice notice-info">
+          <p>
+            <strong>Des ressources sélectionnées, pas garanties.</strong>
+            Les liens externes mènent vers des sites qui ne sont pas gérés par Silver Corporate.
+            Leur contenu, leur gratuité et leur disponibilité peuvent changer : la date de vérification est indiquée
+            sur chaque ressource. Certaines ressources sont en anglais.
+          </p>
+        </div>
+
+        <p class="legend">
+          <span class="badge badge-green">✔ Vérifié</span> lien et contenu consultés, date affichée
+          <span class="badge badge-orange">⚠ À vérifier</span> lien ou contenu à confirmer
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ========== FILTRES ET LISTE ========== -->
+    <section class="section" id="liste">
+      <div class="container">
+
+        <div class="filters" role="group" aria-label="Filtrer les ressources">
+          <label class="filter-field filter-field-wide">
+            <span>Recherche</span>
+            <input type="search" class="filter-input" data-filter="q" data-target="ressources" placeholder="Mot-clé, thème…">
+          </label>
+
+          <label class="filter-field">
+            <span>Thème</span>
+            <select class="filter-select" data-filter="theme" data-target="ressources">
+              <option value="">Tous</option>
+              <option value="etudes">Études</option>
+              <option value="bourses">Bourses</option>
+              <option value="candidatures">Candidatures</option>
+              <option value="numerique">Compétences numériques</option>
+              <option value="programmation">Programmation</option>
+              <option value="ia">Intelligence artificielle</option>
+              <option value="entrepreneuriat">Entrepreneuriat</option>
+            </select>
+          </label>
+
+          <label class="filter-field">
+            <span>Type</span>
+            <select class="filter-select" data-filter="type" data-target="ressources">
+              <option value="">Tous</option>
+              <option value="guide">Guide pratique</option>
+              <option value="cours">Cours ou formation</option>
+              <option value="outil">Outil</option>
+              <option value="lecture">Lecture</option>
+            </select>
+          </label>
+
+          <button type="button" class="btn btn-ghost btn-small" data-reset-filters data-target="ressources">Réinitialiser</button>
+        </div>
+
+        <p class="result-count" data-count-for="ressources" aria-live="polite"></p>
+
+        <!-- Les cartes sont créées automatiquement par script.js à partir de data/ressources-data.js -->
+        <div class="grid grid-3 data-list" data-type="ressources"></div>
+
+        <noscript>
+          <div class="notice notice-warning">
+            <p>Les ressources s'affichent avec JavaScript. Activez-le dans votre navigateur.</p>
+          </div>
+        </noscript>
+
+      </div>
+    </section>
+
+    <!-- ========== SUGGESTION ========== -->
+    <section class="section cta-section">
+      <div class="container cta-inner">
+        <h2>Une ressource utile à partager ?</h2>
+        <p>Envoyez-nous le lien : nous le vérifions avant de le publier. Vous pouvez aussi nous signaler un lien qui ne fonctionne plus.</p>
+        <div class="btn-row btn-row-center">
+          <a href="https://wa.me/242069534092?text=Bonjour%2C%20je%20souhaite%20sugg%C3%A9rer%20une%20ressource%20%28lien%29%20%3A%20"
+             class="btn btn-whatsapp" target="_blank" rel="noopener">Suggérer sur WhatsApp</a>
+          <a href="mailto:silvercorporate.cg@gmail.com?subject=Suggestion%20de%20ressource" class="btn btn-light">Envoyer un e-mail</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== PIED DE PAGE ========== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div>
+        <p class="footer-title">Silver Corporate</p>
+        <p>Former • Inspirer • Transformer</p>
+        <p class="footer-small">Moins d'annonces. Plus de réalisations.</p>
+      </div>
+
+      <div>
+        <p class="footer-title">Pages</p>
+        <ul class="footer-links">
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packs-offres.html">Packs &amp; Offres</a></li>
+          <li><a href="jeunes-inspires.html">Jeunes Inspirés</a></li>
+          <li><a href="opportunites.html">Opportunités</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="informations.html">Informations pratiques</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-title">Contact</p>
+        <p>Pointe-Noire, République du Congo</p>
+        <p><a href="mailto:silvercorporate.cg@gmail.com">silvercorporate.cg@gmail.com</a></p>
+        <p><a href="https://wa.me/242069534092" target="_blank" rel="noopener">WhatsApp : +242 06 953 40 92</a></p>
+      </div>
+
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Silver Corporate. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Vos données : à modifier dans data/ressources-data.js -->
+  <script src="data/ressources-data.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actualités | Silver Corporate</title>
+  <meta name="description" content="Actualités sur le Congo-Brazzaville, l'Afrique et le monde : éducation, jeunesse, numérique, intelligence artificielle, entrepreneuriat, économie et activités de Silver Corporate.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== EN-TÊTE ET MENU ========== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+
+      <a href="index.html" class="brand" aria-label="Silver Corporate - Accueil">
+        <span class="brand-mark" aria-hidden="true">SC</span>
+        <span class="brand-name">Silver Corporate</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packs-offres.html">Packs &amp; Offres</a></li>
+          <li><a href="jeunes-inspires.html">Jeunes Inspirés</a></li>
+          <li><a href="opportunites.html">Opportunités</a></li>
+          <li><a href="actualites.html" aria-current="page">Actualités</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li class="nav-more">
+            <details>
+              <summary>Plus</summary>
+              <ul class="nav-submenu">
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="informations.html">Informations</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== TITRE DE LA PAGE ========== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Congo-Brazzaville · Afrique · Monde</p>
+        <h1>Actualités</h1>
+        <p class="page-lead">
+          Une sélection d'informations utiles aux jeunes, aux étudiants et aux entrepreneurs :
+          éducation, jeunesse, numérique, intelligence artificielle, entrepreneuriat et économie.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== AVERTISSEMENT ET LÉGENDE ========== -->
+    <section class="section section-tight">
+      <div class="container">
+
+        <div class="notice notice-info">
+          <p>
+            <strong>Comment sont rédigées ces actualités ?</strong>
+            Chaque article est un résumé rédigé par Silver Corporate avec ses propres mots, accompagné de sa source
+            et d'un lien vers l'article original. Nous ne reproduisons pas les articles des autres médias :
+            pour le détail complet, consultez la source.
+          </p>
+        </div>
+
+        <p class="legend">
+          <span class="badge badge-green">✔ Vérifié</span> source consultée, date de vérification affichée
+          <span class="badge badge-orange">⚠ À vérifier</span> information non confirmée
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ========== FILTRES ET LISTE ========== -->
+    <section class="section" id="liste">
+      <div class="container">
+
+        <div class="filters" role="group" aria-label="Filtrer les actualités">
+          <label class="filter-field filter-field-wide">
+            <span>Recherche</span>
+            <input type="search" class="filter-input" data-filter="q" data-target="actualites" placeholder="Mot-clé, source…">
+          </label>
+
+          <label class="filter-field">
+            <span>Rubrique</span>
+            <select class="filter-select" data-filter="rubrique" data-target="actualites">
+              <option value="">Toutes</option>
+              <option value="education">Éducation</option>
+              <option value="jeunesse">Jeunesse</option>
+              <option value="numerique">Numérique</option>
+              <option value="ia">Intelligence artificielle</option>
+              <option value="entrepreneuriat">Entrepreneuriat</option>
+              <option value="economie">Économie</option>
+              <option value="silver">Silver Corporate</option>
+            </select>
+          </label>
+
+          <label class="filter-field">
+            <span>Zone</span>
+            <select class="filter-select" data-filter="zone" data-target="actualites">
+              <option value="">Toutes</option>
+              <option value="congo">Congo-Brazzaville</option>
+              <option value="afrique">Afrique</option>
+              <option value="monde">Monde</option>
+            </select>
+          </label>
+
+          <button type="button" class="btn btn-ghost btn-small" data-reset-filters data-target="actualites">Réinitialiser</button>
+        </div>
+
+        <p class="result-count" data-count-for="actualites" aria-live="polite"></p>
+
+        <!-- Les cartes sont créées automatiquement par script.js à partir de data/actualites-data.js -->
+        <div class="grid grid-2 data-list" data-type="actualites"></div>
+
+        <noscript>
+          <div class="notice notice-warning">
+            <p>Les actualités s'affichent avec JavaScript. Activez-le dans votre navigateur.</p>
+          </div>
+        </noscript>
+
+      </div>
+    </section>
+
+    <!-- ========== SIGNALER ========== -->
+    <section class="section cta-section">
+      <div class="container cta-inner">
+        <h2>Une information à nous signaler ?</h2>
+        <p>
+          Envoyez-nous le lien de la source. Nous ne publions que des informations dont la source est identifiable,
+          et nous corrigeons toute erreur qui nous est signalée.
+        </p>
+        <div class="btn-row btn-row-center">
+          <a href="https://wa.me/242069534092?text=Bonjour%2C%20je%20souhaite%20signaler%20une%20actualit%C3%A9%20%28lien%20de%20la%20source%29%20%3A%20"
+             class="btn btn-whatsapp" target="_blank" rel="noopener">Signaler sur WhatsApp</a>
+          <a href="mailto:silvercorporate.cg@gmail.com?subject=Actualit%C3%A9%20%C3%A0%20signaler" class="btn btn-light">Envoyer un e-mail</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== PIED DE PAGE ========== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div>
+        <p class="footer-title">Silver Corporate</p>
+        <p>Former • Inspirer • Transformer</p>
+        <p class="footer-small">Moins d'annonces. Plus de réalisations.</p>
+      </div>
+
+      <div>
+        <p class="footer-title">Pages</p>
+        <ul class="footer-links">
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packs-offres.html">Packs &amp; Offres</a></li>
+          <li><a href="jeunes-inspires.html">Jeunes Inspirés</a></li>
+          <li><a href="opportunites.html">Opportunités</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="informations.html">Informations pratiques</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-title">Contact</p>
+        <p>Pointe-Noire, République du Congo</p>
+        <p><a href="mailto:silvercorporate.cg@gmail.com">silvercorporate.cg@gmail.com</a></p>
+        <p><a href="https://wa.me/242069534092" target="_blank" rel="noopener">WhatsApp : +242 06 953 40 92</a></p>
+      </div>
+
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Silver Corporate. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Vos données : à modifier dans data/actualites-data.js -->
+  <script src="data/actualites-data.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

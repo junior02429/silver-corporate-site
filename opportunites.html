@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Opportunités | Silver Corporate</title>
+  <meta name="description" content="Bourses, emplois, stages, formations, volontariats, concours, appels à projets, financements et programmes d'entrepreneuriat, avec source officielle et date de vérification.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== EN-TÊTE ET MENU ========== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+
+      <a href="index.html" class="brand" aria-label="Silver Corporate - Accueil">
+        <span class="brand-mark" aria-hidden="true">SC</span>
+        <span class="brand-name">Silver Corporate</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packs-offres.html">Packs &amp; Offres</a></li>
+          <li><a href="jeunes-inspires.html">Jeunes Inspirés</a></li>
+          <li><a href="opportunites.html" aria-current="page">Opportunités</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li class="nav-more">
+            <details>
+              <summary>Plus</summary>
+              <ul class="nav-submenu">
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="informations.html">Informations</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== TITRE DE LA PAGE ========== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Congo · Afrique · International</p>
+        <h1>Opportunités</h1>
+        <p class="page-lead">
+          Bourses, emplois, stages, formations gratuites, volontariats, concours, appels à projets,
+          financements et programmes d'entrepreneuriat. Chaque annonce renvoie vers sa source officielle.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== AVERTISSEMENTS ET LÉGENDE ========== -->
+    <section class="section section-tight">
+      <div class="container">
+
+        <div class="notice notice-info">
+          <p>
+            <strong>Vérifiez toujours à la source.</strong>
+            Silver Corporate relaie des opportunités mais n'en est pas l'organisateur, sauf mention contraire.
+            Les conditions et dates peuvent changer : consultez le lien officiel avant de candidater.
+            Méfiez-vous des offres qui demandent de l'argent pour candidater à une bourse ou à un emploi.
+          </p>
+        </div>
+
+        <p class="legend">
+          <span class="badge badge-green">✔ Vérifié</span> source officielle consultée, date de vérification affichée
+          <span class="badge badge-orange">⚠ À vérifier</span> validité non confirmée
+          <span class="badge badge-gray">✖ Clôturé</span> date limite dépassée ou offre terminée
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ========== FILTRES ET LISTE ========== -->
+    <section class="section" id="liste">
+      <div class="container">
+
+        <div class="filters" role="group" aria-label="Filtrer les opportunités">
+          <label class="filter-field filter-field-wide">
+            <span>Recherche</span>
+            <input type="search" class="filter-input" data-filter="q" data-target="opportunites" placeholder="Mot-clé, organisme, pays…">
+          </label>
+
+          <label class="filter-field">
+            <span>Catégorie</span>
+            <select class="filter-select" data-filter="categorie" data-target="opportunites">
+              <option value="">Toutes</option>
+              <option value="bourse">Bourses</option>
+              <option value="emploi">Emplois</option>
+              <option value="stage">Stages</option>
+              <option value="formation">Formations gratuites</option>
+              <option value="volontariat">Volontariats</option>
+              <option value="concours">Concours</option>
+              <option value="appel">Appels à projets</option>
+              <option value="financement">Financements</option>
+              <option value="entrepreneuriat">Entrepreneuriat</option>
+            </select>
+          </label>
+
+          <label class="filter-field">
+            <span>Zone</span>
+            <select class="filter-select" data-filter="zone" data-target="opportunites">
+              <option value="">Toutes</option>
+              <option value="congo">Congo</option>
+              <option value="afrique">Afrique</option>
+              <option value="international">International</option>
+            </select>
+          </label>
+
+          <label class="filter-field">
+            <span>Statut</span>
+            <select class="filter-select" data-filter="statut" data-target="opportunites">
+              <option value="">Tous</option>
+              <option value="verifie">Vérifié</option>
+              <option value="a-verifier">À vérifier</option>
+              <option value="cloture">Clôturé</option>
+            </select>
+          </label>
+
+          <button type="button" class="btn btn-ghost btn-small" data-reset-filters data-target="opportunites">Réinitialiser</button>
+        </div>
+
+        <p class="result-count" data-count-for="opportunites" aria-live="polite"></p>
+
+        <!-- Les cartes sont créées automatiquement par script.js à partir de data/opportunites-data.js -->
+        <div class="grid grid-2 data-list" data-type="opportunites"></div>
+
+        <noscript>
+          <div class="notice notice-warning">
+            <p>La liste des opportunités s'affiche avec JavaScript. Activez-le dans votre navigateur ou écrivez-nous sur
+              <a href="https://wa.me/242069534092" target="_blank" rel="noopener">WhatsApp</a>.</p>
+          </div>
+        </noscript>
+
+      </div>
+    </section>
+
+    <!-- ========== SIGNALER ========== -->
+    <section class="section cta-section">
+      <div class="container cta-inner">
+        <h2>Vous connaissez une opportunité ?</h2>
+        <p>
+          Envoyez-nous le lien de la source officielle. Nous la publions après vérification,
+          avec sa date de contrôle. Vous pouvez aussi nous signaler une erreur ou une offre clôturée.
+        </p>
+        <div class="btn-row btn-row-center">
+          <a href="https://wa.me/242069534092?text=Bonjour%2C%20je%20souhaite%20signaler%20une%20opportunit%C3%A9%20%28lien%20officiel%29%20%3A%20"
+             class="btn btn-whatsapp" target="_blank" rel="noopener">Signaler sur WhatsApp</a>
+          <a href="mailto:silvercorporate.cg@gmail.com?subject=Opportunit%C3%A9%20%C3%A0%20publier" class="btn btn-light">Envoyer un e-mail</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== PIED DE PAGE ========== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div>
+        <p class="footer-title">Silver Corporate</p>
+        <p>Former • Inspirer • Transformer</p>
+        <p class="footer-small">Moins d'annonces. Plus de réalisations.</p>
+      </div>
+
+      <div>
+        <p class="footer-title">Pages</p>
+        <ul class="footer-links">
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packs-offres.html">Packs &amp; Offres</a></li>
+          <li><a href="jeunes-inspires.html">Jeunes Inspirés</a></li>
+          <li><a href="opportunites.html">Opportunités</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="informations.html">Informations pratiques</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-title">Contact</p>
+        <p>Pointe-Noire, République du Congo</p>
+        <p><a href="mailto:silvercorporate.cg@gmail.com">silvercorporate.cg@gmail.com</a></p>
+        <p><a href="https://wa.me/242069534092" target="_blank" rel="noopener">WhatsApp : +242 06 953 40 92</a></p>
+      </div>
+
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Silver Corporate. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Vos données : à modifier dans data/opportunites-data.js -->
+  <script src="data/opportunites-data.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Silver Corporate</title>
+  <meta name="description" content="Contactez Silver Corporate à Pointe-Noire par WhatsApp ou par e-mail : devis, questions sur les services, partenariats.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== EN-TÊTE ET MENU ========== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+
+      <a href="index.html" class="brand" aria-label="Silver Corporate - Accueil">
+        <span class="brand-mark" aria-hidden="true">SC</span>
+        <span class="brand-name">Silver Corporate</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packs-offres.html">Packs &amp; Offres</a></li>
+          <li><a href="jeunes-inspires.html">Jeunes Inspirés</a></li>
+          <li><a href="opportunites.html">Opportunités</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li class="nav-more">
+            <details>
+              <summary>Plus</summary>
+              <ul class="nav-submenu">
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="informations.html">Informations</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="contact.html" class="nav-cta" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== TITRE DE LA PAGE ========== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Parlons de votre besoin</h1>
+        <p class="page-lead">
+          Une question, un devis, une idée de partenariat ? Écrivez-nous sur WhatsApp ou par e-mail.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== COORDONNÉES ET BOUTONS ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2">
+
+          <article class="card card-accent-blue">
+            <h3>Silver Corporate</h3>
+            <ul class="contact-list">
+              <li><strong>Adresse :</strong> Pointe-Noire, République du Congo</li>
+              <li><strong>E-mail :</strong> <a href="mailto:silvercorporate.cg@gmail.com">silvercorporate.cg@gmail.com</a></li>
+              <li><strong>WhatsApp commercial :</strong> <a href="https://wa.me/242069534092" target="_blank" rel="noopener">+242 06 953 40 92</a></li>
+            </ul>
+            <p class="note">
+              Silver Services fonctionne principalement à domicile et en ligne au démarrage.
+              Merci de nous écrire avant de vous déplacer.
+            </p>
+          </article>
+
+          <article class="card card-accent-green">
+            <h3>Que souhaitez-vous faire ?</h3>
+            <div class="btn-stack">
+              <a href="https://wa.me/242069534092?text=Bonjour%20Silver%20Corporate%2C%20je%20souhaite%20vous%20contacter."
+                 class="btn btn-whatsapp" target="_blank" rel="noopener">Contacter par WhatsApp</a>
+              <a href="mailto:silvercorporate.cg@gmail.com?subject=Contact%20Silver%20Corporate"
+                 class="btn btn-primary">Envoyer un e-mail</a>
+              <a href="https://wa.me/242069534092?text=Bonjour%20Silver%20Services%2C%20je%20souhaite%20un%20devis%20pour%20%3A%20"
+                 class="btn btn-secondary" target="_blank" rel="noopener">Demander un devis</a>
+              <a href="https://wa.me/242069534092?text=Bonjour%20Silver%20Services%2C%20j%27ai%20une%20question%20sur%20vos%20services%20%3A%20"
+                 class="btn btn-ghost" target="_blank" rel="noopener">Poser une question sur les services</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FORMULAIRE ========== -->
+    <section class="section section-alt" id="formulaire">
+      <div class="container container-narrow">
+        <div class="section-head">
+          <h2>Préparer un message</h2>
+          <p>Remplissez le formulaire, puis choisissez comment envoyer votre message.</p>
+        </div>
+
+        <div class="notice notice-info">
+          <p>
+            <strong>Comment ça marche ?</strong>
+            Ce site n'a pas de serveur : le formulaire n'enregistre rien et n'envoie rien automatiquement.
+            Il prépare votre message et ouvre WhatsApp ou votre application de messagerie.
+            Votre message n'est transmis que lorsque vous l'envoyez vous-même.
+          </p>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+
+          <div class="form-row">
+            <label for="contact-name">Nom <span class="optional">(facultatif)</span></label>
+            <input type="text" id="contact-name" name="nom" autocomplete="name" placeholder="Votre nom">
+          </div>
+
+          <div class="form-row">
+            <label for="contact-subject">Objet</label>
+            <select id="contact-subject" name="objet">
+              <option value="Question sur les services">Question sur les services</option>
+              <option value="Demande de devis">Demande de devis</option>
+              <option value="Packs et offres">Packs et offres</option>
+              <option value="Partenariat ou collaboration">Partenariat ou collaboration</option>
+              <option value="Jeunes Inspirés">Jeunes Inspirés</option>
+              <option value="Autre demande">Autre demande</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="6" required placeholder="Décrivez votre demande : ce dont vous avez besoin, la quantité, le délai souhaité…"></textarea>
+            <p class="form-error" id="contact-error" role="alert" hidden>Merci d'écrire votre message avant de continuer.</p>
+          </div>
+
+          <div class="btn-row">
+            <button type="button" class="btn btn-whatsapp" data-action="contact-whatsapp">Préparer sur WhatsApp</button>
+            <button type="button" class="btn btn-primary" data-action="contact-email">Ouvrir mon e-mail</button>
+          </div>
+
+          <p class="note">
+            Ne partagez pas d'informations sensibles (mots de passe, codes, numéros de pièce d'identité) dans ce message.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== PARTENARIATS ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Partenariats et collaborations</h2>
+          <p>
+            Nous sommes ouverts aux collaborations avec des entreprises, entrepreneurs, écoles, universités,
+            associations, professionnels, créateurs, formateurs, institutions et structures d'accompagnement.
+            Nous privilégions les collaborations concrètes et réellement exécutées.
+          </p>
+        </div>
+        <div class="btn-row btn-row-center">
+          <a href="https://wa.me/242069534092?text=Bonjour%20Silver%20Corporate%2C%20je%20souhaite%20vous%20proposer%20une%20collaboration%20%3A%20"
+             class="btn btn-green" target="_blank" rel="noopener">Proposer une collaboration</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== PIED DE PAGE ========== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div>
+        <p class="footer-title">Silver Corporate</p>
+        <p>Former • Inspirer • Transformer</p>
+        <p class="footer-small">Moins d'annonces. Plus de réalisations.</p>
+      </div>
+
+      <div>
+        <p class="footer-title">Pages</p>
+        <ul class="footer-links">
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packs-offres.html">Packs &amp; Offres</a></li>
+          <li><a href="jeunes-inspires.html">Jeunes Inspirés</a></li>
+          <li><a href="opportunites.html">Opportunités</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="informations.html">Informations pratiques</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-title">Contact</p>
+        <p>Pointe-Noire, République du Congo</p>
+        <p><a href="mailto:silvercorporate.cg@gmail.com">silvercorporate.cg@gmail.com</a></p>
+        <p><a href="https://wa.me/242069534092" target="_blank" rel="noopener">WhatsApp : +242 06 953 40 92</a></p>
+      </div>
+
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Silver Corporate. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

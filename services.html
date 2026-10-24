@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | Silver Services - Silver Corporate</title>
+  <meta name="description" content="Catalogue des prestations de Silver Services : saisie, mise en forme, impression, photocopie, numérisation, services numériques et accompagnement. Prix de référence et prestations sur devis.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== EN-TÊTE ET MENU ========== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+
+      <a href="index.html" class="brand" aria-label="Silver Corporate - Accueil">
+        <span class="brand-mark" aria-hidden="true">SC</span>
+        <span class="brand-name">Silver Corporate</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html" aria-current="page">Services</a></li>
+          <li><a href="packs-offres.html">Packs &amp; Offres</a></li>
+          <li><a href="jeunes-inspires.html">Jeunes Inspirés</a></li>
+          <li><a href="opportunites.html">Opportunités</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li class="nav-more">
+            <details>
+              <summary>Plus</summary>
+              <ul class="nav-submenu">
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="informations.html">Informations</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== TITRE DE LA PAGE ========== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Silver Services</p>
+        <h1>Nos services</h1>
+        <p class="page-lead">
+          Des services administratifs, bureautiques et numériques accessibles :
+          <strong>accessible, professionnel, rapide, moderne, simple.</strong>
+        </p>
+        <div class="btn-row">
+          <button type="button" class="btn btn-secondary" data-open-cart>Voir mon panier</button>
+          <a href="packs-offres.html" class="btn btn-ghost-light">Voir les packs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== COMMENT ÇA MARCHE ========== -->
+    <section class="section section-tight">
+      <div class="container">
+
+        <div class="notice notice-info">
+          <p>
+            <strong>À lire avant de commander.</strong>
+            Les tarifs affichés sont des tarifs de référence. Le prix final, la disponibilité et le délai
+            sont confirmés avec vous sur WhatsApp avant toute exécution. Les prestations « Sur devis » ne sont pas chiffrées sur le site.
+            Une demande n'est transmise que lorsque vous envoyez le message WhatsApp vous-même.
+          </p>
+        </div>
+
+        <ol class="steps steps-row">
+          <li><strong>Demande</strong><span>Ajoutez au panier ou demandez un devis</span></li>
+          <li><strong>Prix</strong><span>Confirmé avec vous sur WhatsApp</span></li>
+          <li><strong>Paiement</strong><span>Convenu avec vous, hors du site</span></li>
+          <li><strong>Réalisation</strong><span>Après votre accord</span></li>
+          <li><strong>Contrôle qualité</strong><span>Vérification du travail</span></li>
+          <li><strong>Livraison</strong><span>Retrait ou livraison à convenir</span></li>
+        </ol>
+
+        <p class="legend">
+          Statuts :
+          <span class="badge badge-green">Disponible</span>
+          <span class="badge badge-blue">Sur devis</span>
+          <span class="badge badge-orange">À confirmer</span>
+          <span class="badge badge-gray">En développement</span>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ========== CATÉGORIE 1 : SAISIE ET TRAITEMENT ========== -->
+    <section class="section" id="saisie">
+      <div class="container">
+        <div class="section-head">
+          <h2>Saisie et traitement de documents</h2>
+          <p>Documents académiques, administratifs et professionnels.</p>
+        </div>
+        <!-- Les cartes sont créées automatiquement par script.js (catégorie « saisie ») -->
+        <div class="grid grid-3 service-list" data-categorie="saisie" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ========== CATÉGORIE 2 : IMPRESSION ========== -->
+    <section class="section section-alt" id="impression">
+      <div class="container">
+        <div class="section-head">
+          <h2>Impression, reproduction et numérisation</h2>
+          <p>Prix par page ou par document, selon la prestation.</p>
+        </div>
+        <div class="grid grid-3 service-list" data-categorie="impression" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ========== CATÉGORIE 3 : SERVICES NUMÉRIQUES ========== -->
+    <section class="section" id="numerique">
+      <div class="container">
+        <div class="section-head">
+          <h2>Services numériques</h2>
+          <p>Tarifs et disponibilité confirmés au cas par cas. Les prestations complexes passent par un devis.</p>
+        </div>
+        <div class="grid grid-3 service-list" data-categorie="numerique" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ========== CATÉGORIE 4 : ACCOMPAGNEMENT ========== -->
+    <section class="section section-alt" id="accompagnement">
+      <div class="container">
+        <div class="section-head">
+          <h2>Accompagnement professionnel et administratif</h2>
+          <p>La nature exacte de l'accompagnement, son prix, son délai et sa disponibilité sont confirmés avant toute commande.</p>
+        </div>
+        <div class="grid grid-3 service-list" data-categorie="accompagnement" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Message affiché seulement si JavaScript est désactivé -->
+    <noscript>
+      <div class="container section">
+        <div class="notice notice-warning">
+          <p>Le catalogue interactif nécessite JavaScript. Pour connaître nos services et nos tarifs, écrivez-nous sur
+            <a href="https://wa.me/242069534092" target="_blank" rel="noopener">WhatsApp</a>.</p>
+        </div>
+      </div>
+    </noscript>
+
+    <!-- ========== APPEL À L'ACTION ========== -->
+    <section class="section cta-section">
+      <div class="container cta-inner">
+        <h2>Vous ne trouvez pas votre besoin ?</h2>
+        <p>Décrivez-le-nous sur WhatsApp : nous vous dirons si nous pouvons le réaliser, à quel prix et dans quel délai.</p>
+        <div class="btn-row btn-row-center">
+          <a href="https://wa.me/242069534092?text=Bonjour%20Silver%20Services%2C%20j%27ai%20une%20question%20sur%20vos%20prestations."
+             class="btn btn-whatsapp" target="_blank" rel="noopener">Poser une question</a>
+          <a href="informations.html" class="btn btn-light">Comment passer commande</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== PIED DE PAGE ========== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div>
+        <p class="footer-title">Silver Corporate</p>
+        <p>Former • Inspirer • Transformer</p>
+        <p class="footer-small">Moins d'annonces. Plus de réalisations.</p>
+      </div>
+
+      <div>
+        <p class="footer-title">Pages</p>
+        <ul class="footer-links">
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packs-offres.html">Packs &amp; Offres</a></li>
+          <li><a href="jeunes-inspires.html">Jeunes Inspirés</a></li>
+          <li><a href="opportunites.html">Opportunités</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="informations.html">Informations pratiques</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-title">Contact</p>
+        <p>Pointe-Noire, République du Congo</p>
+        <p><a href="mailto:silvercorporate.cg@gmail.com">silvercorporate.cg@gmail.com</a></p>
+        <p><a href="https://wa.me/242069534092" target="_blank" rel="noopener">WhatsApp : +242 06 953 40 92</a></p>
+      </div>
+
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Silver Corporate. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

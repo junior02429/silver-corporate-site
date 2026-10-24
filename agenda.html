@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agenda | Silver Corporate</title>
+  <meta name="description" content="Agenda des formations, webinaires, conférences, rencontres, concours et activités, avec dates, lieu ou format, conditions de participation et lien d'inscription.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== EN-TÊTE ET MENU ========== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+
+      <a href="index.html" class="brand" aria-label="Silver Corporate - Accueil">
+        <span class="brand-mark" aria-hidden="true">SC</span>
+        <span class="brand-name">Silver Corporate</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packs-offres.html">Packs &amp; Offres</a></li>
+          <li><a href="jeunes-inspires.html">Jeunes Inspirés</a></li>
+          <li><a href="opportunites.html">Opportunités</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="agenda.html" aria-current="page">Agenda</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li class="nav-more">
+            <details>
+              <summary>Plus</summary>
+              <ul class="nav-submenu">
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="informations.html">Informations</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== TITRE DE LA PAGE ========== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Formations · Webinaires · Rencontres</p>
+        <h1>Agenda</h1>
+        <p class="page-lead">
+          Les événements confirmés : formations, webinaires, conférences, rencontres, concours et activités.
+          Seuls les événements réels et vérifiés y sont publiés.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== AVERTISSEMENT ========== -->
+    <section class="section section-tight">
+      <div class="container">
+
+        <div class="notice notice-info">
+          <p>
+            <strong>Inscription.</strong>
+            Ce site ne gère pas les inscriptions. Le bouton d'inscription renvoie vers le lien de l'organisateur
+            ou, pour nos propres activités, vers WhatsApp. Vérifiez la date, l'heure et les conditions à la source
+            avant de vous déplacer ou de vous connecter.
+          </p>
+        </div>
+
+        <p class="legend">
+          <span class="badge badge-green">✔ Confirmé</span> événement vérifié
+          <span class="badge badge-orange">⚠ À vérifier</span> date ou conditions à confirmer
+          <span class="badge badge-gray">✖ Terminé</span> événement passé
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ========== FILTRES ET LISTE ========== -->
+    <section class="section" id="liste">
+      <div class="container">
+
+        <div class="filters" role="group" aria-label="Filtrer les événements">
+          <label class="filter-field filter-field-wide">
+            <span>Recherche</span>
+            <input type="search" class="filter-input" data-filter="q" data-target="agenda" placeholder="Mot-clé, lieu, organisateur…">
+          </label>
+
+          <label class="filter-field">
+            <span>Type</span>
+            <select class="filter-select" data-filter="type" data-target="agenda">
+              <option value="">Tous</option>
+              <option value="formation">Formations</option>
+              <option value="webinaire">Webinaires</option>
+              <option value="conference">Conférences</option>
+              <option value="rencontre">Rencontres</option>
+              <option value="concours">Concours</option>
+              <option value="activite">Activités</option>
+            </select>
+          </label>
+
+          <label class="filter-field">
+            <span>Format</span>
+            <select class="filter-select" data-filter="format" data-target="agenda">
+              <option value="">Tous</option>
+              <option value="presentiel">Sur place</option>
+              <option value="en-ligne">En ligne</option>
+              <option value="hybride">Hybride</option>
+            </select>
+          </label>
+
+          <label class="filter-field">
+            <span>Statut</span>
+            <select class="filter-select" data-filter="statut" data-target="agenda">
+              <option value="">Tous</option>
+              <option value="confirme">Confirmé</option>
+              <option value="a-verifier">À vérifier</option>
+              <option value="termine">Terminé</option>
+            </select>
+          </label>
+
+          <button type="button" class="btn btn-ghost btn-small" data-reset-filters data-target="agenda">Réinitialiser</button>
+        </div>
+
+        <p class="result-count" data-count-for="agenda" aria-live="polite"></p>
+
+        <!-- Les cartes sont créées automatiquement par script.js à partir de data/agenda-data.js -->
+        <div class="grid grid-2 data-list" data-type="agenda"></div>
+
+        <noscript>
+          <div class="notice notice-warning">
+            <p>L'agenda s'affiche avec JavaScript. Activez-le dans votre navigateur.</p>
+          </div>
+        </noscript>
+
+      </div>
+    </section>
+
+    <!-- ========== PROPOSER UN ÉVÉNEMENT ========== -->
+    <section class="section cta-section">
+      <div class="container cta-inner">
+        <h2>Vous organisez un événement ?</h2>
+        <p>
+          Écrivez-nous avec la date, le lieu ou le format, les conditions de participation et le lien d'inscription.
+          Nous le publions après vérification.
+        </p>
+        <div class="btn-row btn-row-center">
+          <a href="https://wa.me/242069534092?text=Bonjour%2C%20je%20souhaite%20proposer%20un%20%C3%A9v%C3%A9nement%20pour%20l%27agenda%20%3A%20"
+             class="btn btn-whatsapp" target="_blank" rel="noopener">Proposer sur WhatsApp</a>
+          <a href="mailto:silvercorporate.cg@gmail.com?subject=%C3%89v%C3%A9nement%20pour%20l%27agenda" class="btn btn-light">Envoyer un e-mail</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== PIED DE PAGE ========== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div>
+        <p class="footer-title">Silver Corporate</p>
+        <p>Former • Inspirer • Transformer</p>
+        <p class="footer-small">Moins d'annonces. Plus de réalisations.</p>
+      </div>
+
+      <div>
+        <p class="footer-title">Pages</p>
+        <ul class="footer-links">
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packs-offres.html">Packs &amp; Offres</a></li>
+          <li><a href="jeunes-inspires.html">Jeunes Inspirés</a></li>
+          <li><a href="opportunites.html">Opportunités</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="informations.html">Informations pratiques</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-title">Contact</p>
+        <p>Pointe-Noire, République du Congo</p>
+        <p><a href="mailto:silvercorporate.cg@gmail.com">silvercorporate.cg@gmail.com</a></p>
+        <p><a href="https://wa.me/242069534092" target="_blank" rel="noopener">WhatsApp : +242 06 953 40 92</a></p>
+      </div>
+
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Silver Corporate. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Vos données : à modifier dans data/agenda-data.js -->
+  <script src="data/agenda-data.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

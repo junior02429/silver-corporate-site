@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Packs &amp; Offres | Silver Services - Silver Corporate</title>
+  <meta name="description" content="Packs Silver Services pour étudiants, candidats, entrepreneurs, particuliers et organisations. Prix à confirmer ou sur devis, promotions en cours de validation.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== EN-TÊTE ET MENU ========== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+
+      <a href="index.html" class="brand" aria-label="Silver Corporate - Accueil">
+        <span class="brand-mark" aria-hidden="true">SC</span>
+        <span class="brand-name">Silver Corporate</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packs-offres.html" aria-current="page">Packs &amp; Offres</a></li>
+          <li><a href="jeunes-inspires.html">Jeunes Inspirés</a></li>
+          <li><a href="opportunites.html">Opportunités</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li class="nav-more">
+            <details>
+              <summary>Plus</summary>
+              <ul class="nav-submenu">
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="informations.html">Informations</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== TITRE DE LA PAGE ========== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Silver Services</p>
+        <h1>Packs &amp; Offres</h1>
+        <p class="page-lead">
+          Des ensembles de prestations pensés pour des besoins fréquents.
+          Les packs simples pourront avoir un prix fixe après validation ; les packs complexes se font sur devis.
+        </p>
+        <div class="btn-row">
+          <button type="button" class="btn btn-secondary" data-open-cart>Voir mon panier</button>
+          <a href="services.html" class="btn btn-ghost-light">Voir les services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== AVERTISSEMENT ========== -->
+    <section class="section section-tight">
+      <div class="container">
+        <div class="notice notice-warning">
+          <p>
+            <strong>Offres en préparation.</strong>
+            Les prix des packs et les promotions sont en cours de validation. Tant qu'un prix n'est pas validé,
+            le pack affiche « Prix à confirmer » ou « Sur devis » : il n'est alors pas ajouté au panier comme une offre à prix fixe.
+            Une promotion n'apparaît comme active que si elle est validée, datée et en cours.
+          </p>
+        </div>
+
+        <p class="legend">
+          Statuts :
+          <span class="badge badge-green">Disponible</span>
+          <span class="badge badge-blue">Sur devis</span>
+          <span class="badge badge-orange">Prix à confirmer</span>
+          <span class="badge badge-gray">En préparation</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== LES PACKS ========== -->
+    <section class="section" id="packs">
+      <div class="container">
+        <div class="section-head">
+          <h2>Les packs Silver Services</h2>
+          <p>Filtrez par public pour trouver le pack qui correspond à votre besoin.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtrer les packs">
+          <label class="filter-field">
+            <span>Public</span>
+            <select class="filter-select" data-filter="public" data-target="packs">
+              <option value="">Tous les publics</option>
+              <option value="etudiants">Étudiants</option>
+              <option value="candidats">Candidats</option>
+              <option value="entrepreneurs">Entrepreneurs</option>
+              <option value="particuliers">Particuliers</option>
+              <option value="organisations">Organisations</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="result-count" data-count-for="packs" aria-live="polite"></p>
+
+        <!-- Les cartes sont créées automatiquement par script.js (liste CATALOGUE_PACKS) -->
+        <div class="grid grid-3 data-list" data-type="packs"></div>
+
+        <noscript>
+          <div class="notice notice-warning">
+            <p>Les packs s'affichent avec JavaScript. Pour les connaître, écrivez-nous sur
+              <a href="https://wa.me/242069534092" target="_blank" rel="noopener">WhatsApp</a>.</p>
+          </div>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ========== RÈGLES DES PACKS ========== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Ce que précise chaque pack</h2>
+          <p>Avant toute commande, un pack indique clairement ce qu'il contient et ce qu'il ne contient pas.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Informations affichées</h3>
+            <ul class="list-check">
+              <li>Le nom du pack et le public concerné</li>
+              <li>Les prestations incluses</li>
+              <li>Les quantités ou limites applicables</li>
+              <li>Les éléments non inclus</li>
+              <li>Le prix validé, ou la mention « Sur devis »</li>
+              <li>Le statut de disponibilité</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Règles à connaître</h3>
+            <ul class="list-check">
+              <li>Une prestation non comprise dans le pack n'est pas gratuite.</li>
+              <li>Tout supplément est indiqué et accepté par vous avant validation.</li>
+              <li>Les délais, le retrait ou la livraison sont confirmés sur WhatsApp.</li>
+              <li>Les prestations déjà incluses dans un pack ne sont pas comptées deux fois.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROMOTIONS ========== -->
+    <section class="section" id="promotions">
+      <div class="container">
+        <div class="section-head">
+          <h2>Offres promotionnelles</h2>
+          <p>
+            Ces offres sont envisagées. Aucune n'est active tant qu'elle n'est pas validée par Silver Corporate,
+            avec ses dates, ses conditions et sa règle de cumul.
+          </p>
+        </div>
+
+        <!-- Les cartes sont créées automatiquement par script.js (liste PROMOTIONS) -->
+        <div class="grid grid-3 data-list" data-type="promotions"></div>
+
+        <div class="notice notice-info">
+          <p>
+            <strong>Règles de calcul.</strong>
+            Une seule promotion est appliquée par ligne de commande. Les réductions ne se cumulent pas automatiquement.
+            Un pack à prix fixe ne reçoit pas de seconde réduction, et les prestations sur devis n'en reçoivent pas automatiquement.
+            Les règles particulières sont affichées avant l'envoi de votre demande.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== APPEL À L'ACTION ========== -->
+    <section class="section cta-section">
+      <div class="container cta-inner">
+        <h2>Un besoin précis ?</h2>
+        <p>Décrivez-le sur WhatsApp : nous vous proposons un pack adapté ou un devis personnalisé.</p>
+        <div class="btn-row btn-row-center">
+          <a href="https://wa.me/242069534092?text=Bonjour%20Silver%20Services%2C%20je%20souhaite%20des%20informations%20sur%20vos%20packs."
+             class="btn btn-whatsapp" target="_blank" rel="noopener">Demander des informations</a>
+          <a href="informations.html" class="btn btn-light">Conditions et fonctionnement</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== PIED DE PAGE ========== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div>
+        <p class="footer-title">Silver Corporate</p>
+        <p>Former • Inspirer • Transformer</p>
+        <p class="footer-small">Moins d'annonces. Plus de réalisations.</p>
+      </div>
+
+      <div>
+        <p class="footer-title">Pages</p>
+        <ul class="footer-links">
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="packs-offres.html">Packs &amp; Offres</a></li>
+          <li><a href="jeunes-inspires.html">Jeunes Inspirés</a></li>
+          <li><a href="opportunites.html">Opportunités</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="informations.html">Informations pratiques</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-title">Contact</p>
+        <p>Pointe-Noire, République du Congo</p>
+        <p><a href="mailto:silvercorporate.cg@gmail.com">silvercorporate.cg@gmail.com</a></p>
+        <p><a href="https://wa.me/242069534092" target="_blank" rel="noopener">WhatsApp : +242 06 953 40 92</a></p>
+      </div>
+
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Silver Corporate. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
