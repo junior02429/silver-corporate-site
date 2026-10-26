@@ -1,18 +1,33 @@
+/* ==========================================================
+   ACTUALITÉS : vos articles
 
+   COMMENT AJOUTER UNE ACTUALITÉ
+   1. Lisez l'article original.
+   2. Écrivez VOUS-MÊME un résumé avec vos propres mots (2 à 4 phrases).
+      Ne copiez ni phrases, ni citations, ni chiffres que vous n'avez pas vérifiés.
+   3. Copiez un bloc existant (de l'accolade ouvrante à l'accolade fermante, avec sa virgule),
+      collez-le juste en dessous, puis changez les textes.
 
-/* ----- MODÈLE À COPIER -----
-  {
-    titre: "Titre de l'actualité (le vôtre ou celui de l'article)",
-    resume: "Votre résumé original, écrit avec vos propres mots.",
-    rubrique: "numerique",
-    zone: "afrique",
-    datePublication: "2026-10-20",
-    dateVerification: "2026-10-24",
-    statut: "verifie",
-    source: "Nom du média",
-    lien: "https://lien-de-l-article-original.exemple"
-  },
------------------------------ */
+   RÈGLES
+   - titre, resume, source, lien (https://...) et datePublication sont OBLIGATOIRES,
+     sinon l'article est ignoré.
+   - statut "verifie" : seulement avec dateVerification remplie, sinon « À vérifier ».
+   - Dates au format AAAA-MM-JJ (exemple : 2026-12-31).
+   - Une virgule après chaque bloc, SAUF après le dernier.
+   - Si votre texte contient un guillemet droit, remplacez-le par ’ ou « ».
+
+   CHAMPS FACULTATIFS
+   - etiquette   : texte du badge (ex. "Technologie & Formation"). Sans lui, la rubrique s'affiche.
+   - image       : "assets/images/nom-du-fichier.jpg" (ou un lien https://)
+   - imageAlt    : description courte de l'image
+   - imageCredit : crédit (ex. "Photo : Silver Corporate" ou "Image d’illustration : ...")
+   N'utilisez que des images dont vous avez les droits. Ne reprenez pas la photo d'un article.
+
+   VALEURS POSSIBLES
+   rubrique : education, jeunesse, numerique, ia, entrepreneuriat, economie, silver
+   zone     : congo, afrique, monde
+   statut   : verifie, a-verifier
+   ========================================================== */
 
 window.ACTUALITES = [
   {
